@@ -36,6 +36,10 @@ Once I validated the query, I proceeded to create the Scheduled Query Rule in **
 
 ---
 
+![image](https://github.com/user-attachments/assets/122f0b2f-d639-4051-825c-1661cb3cc739)
+
+
+
 ## Part 2: Triggering an Alert and Creating an Incident
 
 After configuring the rule, I manually triggered an alert to verify that it successfully created an incident in Sentinel. If the required logs were missing, I ensured the alert triggered by intentionally failing login attempts on the VM multiple times.
@@ -98,6 +102,10 @@ DeviceLogonEvents
 ### 5. Closure
 - Reviewed and confirmed that the incident was **fully resolved**.
 - Ensured all findings and actions were **properly recorded** within Sentinel.
+
+![image](https://github.com/user-attachments/assets/50216b42-5e12-42a5-bc61-2a696fa01fd1)
+
+
 - Finalized reporting and closed the case, categorizing it as a **True Positive** in Sentinel.
 
 
