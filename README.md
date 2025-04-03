@@ -1,5 +1,13 @@
-# Virtual-Machine-Brute-Force-Detection
 # Brute Force Attempt Detection in Microsoft Sentinel
+
+### Explanation  
+
+When entities (local or remote users) attempt to log into a virtual machine, a log entry is generated on the local machine. This log is then forwarded to **Microsoft Defender for Endpoint (MDE)** under the **DeviceLogonEvents** table.  
+
+These logs are subsequently sent to the **Log Analytics Workspace**, which is used by **Microsoft Sentinel**, our **Security Information and Event Management (SIEM)** solution.  
+
+Within **Microsoft Sentinel**, we define an **alert rule** that triggers when a specific entity fails to log into the same virtual machine (VM) multiple times within a given time frame. In this lab, the rule is configured to detect **10 or more failed logins within a 5-hour period**.  
+
 
 ## Part 1: Creating an Alert Rule
 
